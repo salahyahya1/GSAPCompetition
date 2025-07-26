@@ -548,9 +548,10 @@ this.section4Timeline.to(".space-01",{
     stagger: 0.05,
     scrollTrigger:{
       trigger: '#space-02',
-      start: '300% top',
-      end: '500% bottom',
+      start: '400% top',
+      end: '600% bottom',
       scrub: true,
+      markers:true
     },
     scrambleText: {
       text: 'x',
@@ -578,8 +579,8 @@ this.section4Timeline.to(".space-01",{
     },
     scrollTrigger:{
       trigger: '#space-03',
-      start: '350% top',
-      end: '610% bottom',
+      start: '450% top',
+      end: '710% bottom',
       scrub: true,
     }, 
   })
@@ -595,8 +596,8 @@ this.section4Timeline.to(".space-01",{
     stagger: 0.05,
     scrollTrigger:{
       trigger: '#space-04',
-      start: '320% top',
-      end: '520% bottom',
+      start: '420% top',
+      end: '620% bottom',
       scrub: true,
       // markers: true,
     },
@@ -621,8 +622,8 @@ this.section4Timeline.to(".space-01",{
     stagger: 0.05,
     scrollTrigger:{
       trigger: '#space-05',
-      start: '330% top',
-      end: '530% bottom',
+      start: '430% top',
+      end: '630% bottom',
       scrub: true,
       // markers: true,
     },
