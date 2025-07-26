@@ -551,7 +551,7 @@ this.section4Timeline.to(".space-01",{
       start: '400% top',
       end: '600% bottom',
       scrub: true,
-      markers:true
+      // markers:true
     },
     scrambleText: {
       text: 'x',
