@@ -1,0 +1,78 @@
+.plaentcontainer{
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    overflow: hidden;
+  }
+  
+  .viewer-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: radial-gradient(circle at center, transparent 0%, rgba(0,0,0,0.3) 100%);
+  }
+  
+  canvas {
+    display: block;
+    cursor: grab;
+  }
+  
+  canvas:active {
+    cursor: grabbing;
+  }
+  
+  .info-text {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: 300;
+    font-family: 'Arial', sans-serif;
+    max-width: 30%;
+    z-index: 10;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.9;
+    transition: all 0.3s ease;
+    user-select: none;
+    pointer-events: none;
+  }
+  
+  .info-text h1 {
+    margin: 0;
+    padding: 20px 0;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradientShift 4s ease-in-out infinite;
+  }
+  
+  @keyframes gradientShift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+  
+
+  @media (max-width: 768px) {
+    .info-text {
+      font-size: 2rem;
+      left: 3%;
+      max-width: 40%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .info-text {
+      font-size: 1.5rem;
+      left: 2%;
+      max-width: 50%;
+    }
+  }
